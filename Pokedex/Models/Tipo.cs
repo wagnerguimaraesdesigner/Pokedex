@@ -18,4 +18,6 @@ public class Tipo
     [Required(ErrorMessage = "Por favor, informe a cor")]
 
     public string Cor { get; set;} = "#000";
+
+    public ICollection<PokemonTipo> Pokemons { get; set; }
 }
